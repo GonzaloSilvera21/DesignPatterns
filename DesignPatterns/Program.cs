@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using FactoryMethod;
+using FactoryMethod.MusicPlayer;
+
+MusicPlayerFactory playerFactory;
+IMusicPlayer musicPlayer;
+
+playerFactory = new CDCreator();
+musicPlayer = playerFactory.CreatePlayer();
+
+string playerMessage = musicPlayer.Play();
+Console.WriteLine(playerMessage);
