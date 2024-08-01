@@ -1,23 +1,13 @@
-﻿using AbstractFactory.VehiculoFactory;
+﻿using Builder.Computer;
 
-IVehiculoFactory vehiculoFactory;
-IVehiculo vehiculo;
-IMotor motor;
+ComputerDirector director = new ComputerDirector();
 
-// Automovil
-vehiculoFactory = new AutomovilFactory();
-vehiculo = vehiculoFactory.CrearVehiculo();
-motor = vehiculoFactory.CrearMotor();
+IComputerBuilder gamingBuilder = new GamingComputerBuilder();
+director.Construct(gamingBuilder);
+Computer gamingComputer = gamingBuilder.GetComputer();
+Console.WriteLine("Gaming Computer: " + gamingComputer);
 
-motor.Arrancar();
-vehiculo.Conducir();
-
-Console.WriteLine("\n");
-
-// Motocicleta
-vehiculoFactory = new MotocicletaFactory();
-vehiculo = vehiculoFactory.CrearVehiculo();
-motor = vehiculoFactory.CrearMotor();
-
-motor.Arrancar();
-vehiculo.Conducir();
+IComputerBuilder officeBuilder = new OfficeComputerBuilder();
+director.Construct(officeBuilder);
+Computer officeComputer = officeBuilder.GetComputer();
+Console.WriteLine("Office Computer: " +  officeComputer);
