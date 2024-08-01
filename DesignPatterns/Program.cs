@@ -1,11 +1,23 @@
-﻿using FactoryMethod;
-using FactoryMethod.MusicPlayer;
+﻿using AbstractFactory.VehiculoFactory;
 
-MusicPlayerFactory playerFactory;
-IMusicPlayer musicPlayer;
+IVehiculoFactory vehiculoFactory;
+IVehiculo vehiculo;
+IMotor motor;
 
-playerFactory = new CDCreator();
-musicPlayer = playerFactory.CreatePlayer();
+// Automovil
+vehiculoFactory = new AutomovilFactory();
+vehiculo = vehiculoFactory.CrearVehiculo();
+motor = vehiculoFactory.CrearMotor();
 
-string playerMessage = musicPlayer.Play();
-Console.WriteLine(playerMessage);
+motor.Arrancar();
+vehiculo.Conducir();
+
+Console.WriteLine("\n");
+
+// Motocicleta
+vehiculoFactory = new MotocicletaFactory();
+vehiculo = vehiculoFactory.CrearVehiculo();
+motor = vehiculoFactory.CrearMotor();
+
+motor.Arrancar();
+vehiculo.Conducir();
