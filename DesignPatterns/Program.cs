@@ -1,13 +1,17 @@
-﻿using Builder.Computer;
+﻿
+using Builder.Car;
+using Builder.Conceptual;
 
-ComputerDirector director = new ComputerDirector();
+var director = new Builder.Car.Director();
+CarBuilder builder = new CarBuilder();
+director.ConstructSportCar(builder);
 
-IComputerBuilder gamingBuilder = new GamingComputerBuilder();
-director.Construct(gamingBuilder);
-Computer gamingComputer = gamingBuilder.GetComputer();
-Console.WriteLine("Gaming Computer: " + gamingComputer);
+Car car = builder.GetCar();
 
-IComputerBuilder officeBuilder = new OfficeComputerBuilder();
-director.Construct(officeBuilder);
-Computer officeComputer = officeBuilder.GetComputer();
-Console.WriteLine("Office Computer: " +  officeComputer);
+Console.WriteLine(car);
+
+ManualBuilder manualBuilder = new ManualBuilder();
+director.ConstructSportCar(manualBuilder);
+
+Manual manual = manualBuilder.GetManual();
+Console.WriteLine(manual);
