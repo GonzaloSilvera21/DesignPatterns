@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns", "DesignPat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{9686ABEA-D928-427C-A322-FD9F2B99B8A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{9B670652-7D9F-4E5E-AAC5-4E9B65E4FB0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{9B670652-7D9F-4E5E-AAC5-4E9B65E4FB0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{A26105EE-B27C-4695-AED7-580177763006}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.csproj", "{A26105EE-B27C-4695-AED7-580177763006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{EE4179AB-D92A-4AC3-B4A0-9A06707A8286}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A26105EE-B27C-4695-AED7-580177763006}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A26105EE-B27C-4695-AED7-580177763006}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A26105EE-B27C-4695-AED7-580177763006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE4179AB-D92A-4AC3-B4A0-9A06707A8286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4179AB-D92A-4AC3-B4A0-9A06707A8286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4179AB-D92A-4AC3-B4A0-9A06707A8286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE4179AB-D92A-4AC3-B4A0-9A06707A8286}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
