@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Prototype\Prot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{AC083E94-E6F7-40C8-AE77-FFD90D959D9F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creacionales", "Creacionales", "{374FD4F7-7910-4694-AF2A-04745A3AC6AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9686ABEA-D928-427C-A322-FD9F2B99B8A2} = {374FD4F7-7910-4694-AF2A-04745A3AC6AC}
+		{9B670652-7D9F-4E5E-AAC5-4E9B65E4FB0A} = {374FD4F7-7910-4694-AF2A-04745A3AC6AC}
+		{A26105EE-B27C-4695-AED7-580177763006} = {374FD4F7-7910-4694-AF2A-04745A3AC6AC}
+		{EE4179AB-D92A-4AC3-B4A0-9A06707A8286} = {374FD4F7-7910-4694-AF2A-04745A3AC6AC}
+		{AC083E94-E6F7-40C8-AE77-FFD90D959D9F} = {374FD4F7-7910-4694-AF2A-04745A3AC6AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC8C688E-3A1B-4840-AA74-D4E8BB7F1640}
